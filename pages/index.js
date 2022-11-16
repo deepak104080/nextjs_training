@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+// import Image from './Image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -69,3 +70,24 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home
+
+
+// class components
+
+// Class Home extends
+
+
+
+
+
+// const Head = {
+//   return (
+//     <html>
+//     <head>
+//       {children}
+//     </head>
+//     </html>
+//   )
+// }
