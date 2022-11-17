@@ -6,9 +6,6 @@ import Navbar from '../common/Navbar';
 const Facilities = () => {
     return(
         <div>
-
-            <Header/>
-            <Navbar/>
             <h2>This is facilties file.</h2>
             <ul>
                 <li>Lab</li>
@@ -16,7 +13,6 @@ const Facilities = () => {
                 <li>Library</li>
                 <li>Sports</li>
             </ul>
-            <Footer/>
            
         </div>
     )

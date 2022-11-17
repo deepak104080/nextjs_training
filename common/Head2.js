@@ -2,7 +2,7 @@ import React from 'react'
 
 const Head2 = () => {
   return (
-    <div>
+    <div className='col-3'>
       <h2>search bar</h2>
     </div>
   )

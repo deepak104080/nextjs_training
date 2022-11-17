@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
+    <div className='row bg-info bg-opacity-50'>
         <h3>Copyright</h3>
     </div>
   )
