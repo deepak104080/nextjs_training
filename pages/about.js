@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import Navbar from '../common/Navbar';
@@ -7,6 +7,19 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 const About = () => {
+
+  // useEffect(()=>{
+  //     //make api call
+  // })
+
+  // useEffect(()=>{
+  //     //make api call
+  // }, [])
+
+  // useEffect(()=>{
+  //   //make api call
+  // }, [name])
+
   return (
     <>
     <Head>

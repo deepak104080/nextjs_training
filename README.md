@@ -140,3 +140,9 @@ courses
 
 
 npx create-next-app@latest
+
+
+
+
+SSG - Static Site Generation - html pages are built initially
+SSR - Server Side Rendering - html pages are bulit on very request

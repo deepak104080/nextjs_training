@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-// ssg - build
-export const getStaticProps = async () => {
+//ssr - page visit
+export const getServerSideProps = async () => {
     //api call
     const response = await fetch('https://fakestoreapi.com/products');
     // console.log(response);
@@ -12,17 +12,17 @@ export const getStaticProps = async () => {
     }
 }
 
-const Courses = (props) => {
+const Products = (props) => {
     console.log('props', props);
     const {productData} = props;
-    return(
+    return (
         <div>
-            <h2>This is courses file.</h2>
-            {productData.map(item => (
-                <div>{item.title}</div>
-            ))}
-        </div>
+                <h2>This is courses file.</h2>
+                {productData.map(item => (
+                    <div>{item.title}</div>
+                ))}
+            </div>
     )
 }
 
-export default Courses;
+export default Products
