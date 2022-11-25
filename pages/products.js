@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 //ssr - page visit
 export const getServerSideProps = async () => {
@@ -17,9 +18,9 @@ const Products = (props) => {
     const {productData} = props;
     return (
         <div>
-                <h2>This is courses file.</h2>
+                <h2 className='text_nextjs'>This is courses file.</h2>
                 {productData.map(item => (
-                    <div>{item.title}</div>
+                    <div><Link href={`/products/${item.id}`}>{item.title}</Link></div>
                 ))}
             </div>
     )

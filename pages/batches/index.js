@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react'
+import Link from 'next/link';
 
-// ssg - build
+
 export const getStaticProps = async () => {
     //api call
     const response = await fetch('https://fakestoreapi.com/products');
@@ -12,21 +13,19 @@ export const getStaticProps = async () => {
     }
 }
 
-const Courses = (props) => {
+
+//products
+const Batches = (props) => {
     console.log('props', props);
     const {productData} = props;
-    return(
+    return (
         <div>
-            <h2>This is courses file.</h2>
-            {productData.map(item => (
-                <div>{item.title}</div>
-            ))}
-        </div>
+                <h2 className='text_nextjs'>This is courses file.</h2>
+                {productData.map(item => (
+                    <div><Link href={`/batches/${item.id}`}>{item.title}</Link></div>
+                ))}
+            </div>
     )
 }
 
-export default Courses;
-
-
-// npm run build - deploying our code - getstaticprops
-// page visiting - get serversideprops
+export default Batches

@@ -7,7 +7,7 @@ const NotFound = () => {
 
     useEffect(()=>{
         setTimeout(() => {
-            router.push('/contact');
+            //router.push('/contact');
         },3000)
     }, [])
 

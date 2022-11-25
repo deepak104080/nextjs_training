@@ -146,3 +146,17 @@ npx create-next-app@latest
 
 SSG - Static Site Generation - html pages are built initially
 SSR - Server Side Rendering - html pages are bulit on very request
+
+
+
+Styles and Designing of Layouts - styles, external css, scss
+APIs in NextJS - api pages, req, res obj, mongodb, mongoose
+
+
+
+Assg 2 - Create category and product detail page
+        -- nav bar
+        --login and registration page
+        -- add login logout registration butoon on header right side
+        --logo, footer
+        -- styles/css/scss
