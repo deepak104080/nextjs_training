@@ -160,3 +160,59 @@ Assg 2 - Create category and product detail page
         -- add login logout registration butoon on header right side
         --logo, footer
         -- styles/css/scss
+
+
+
+Structured DB - SQL Databases - MySQL, Oracle, MS SQL, PostreSQL - Tables
+Non-Strcutured DB - NoSQL Databases - MongoDB, CouchDB, Cassandra, DynaoDB - Normal Files (Key Value)
+
+MongoDB (Online)
+
+
+DOM - Document Object Model
+ORM - Object Relational Model
+Table - Collection - File (Key Value)
+
+
+id      title   price   description     category        image
+1       test    111     desc            clothing        abc
+2       test2   222     desc            clothing        abc
+
+
+id - number/string - 1,2,3, /abc123, abc124,abc125
+title - string
+price - number
+descri - string
+category - string
+image - string
+
+
+
+[
+        {
+                id: 1,
+                title: test 123,
+                price: 111,
+                description: 222,
+                category: clothing,
+                image: abc
+                _id: random string
+                _v: 1
+        }
+         {
+                id: 2,
+                title: test 2,
+                price: 111, - optional
+                description: 222, - optional
+                category: clothing, - optional
+                image: abc    -optional   
+        },
+]
+
+
+
+Model - Schema (a file where we define the structure of collection / blueprint)
+
+mongoose - ORM
+
+MongoDB library - complex
