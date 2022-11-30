@@ -216,3 +216,30 @@ Model - Schema (a file where we define the structure of collection / blueprint)
 mongoose - ORM
 
 MongoDB library - complex
+
+
+
+
+-----------------------------------------
+mongoose
+schema - to define schema
+model - to set a collection to model
+connect - connect to db
+
+
+mongoose model
+find - to fetch all data of that collection
+
+
+
+
+Req Object
+body - to access data passed in body
+headers - to modify headers
+
+
+Res Object
+res.status - to return status code
+res.send - to send any type of data
+res.json - to send json data
+headers - to modify response header
