@@ -1,8 +1,8 @@
-import Products from "../../models/Products";
-import connectDb from "../../middleware/mongoose";
+import Products from "../../../models/Products";
+import connectDb from "../../../middleware/mongoose";
 
 //POST Call to fetch some data
-// http://localhost:3000/api/addProduct
+// http://localhost:3000/api/products/addProduct
 const handler = async (req, res) => {
 
     if(req.method == 'POST') {

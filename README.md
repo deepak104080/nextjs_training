@@ -243,3 +243,9 @@ res.status - to return status code
 res.send - to send any type of data
 res.json - to send json data
 headers - to modify response header
+
+
+
+HW
+Create login and registration form - react pages
+make api call (call to own api)

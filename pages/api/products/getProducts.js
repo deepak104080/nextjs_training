@@ -1,5 +1,5 @@
-import Products from "../../models/Products";
-import connectDb from "../../middleware/mongoose";
+import Products from "../../../models/Products";
+import connectDb from "../../../middleware/mongoose";
 //connection with database pending
 
 // export default function handler(req, res) {
@@ -7,7 +7,7 @@ import connectDb from "../../middleware/mongoose";
 //   }
 
 //GET Call to fetch some data
-//http://localhost:3000/api/getProducts
+//http://localhost:3000/api/products/getProducts
 const handler = async (req, res) => {
   const data = await Products.find();
   res.status(200).json(data);
