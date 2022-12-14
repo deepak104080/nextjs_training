@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import {useRouter} from 'next/router';
 
 // ssg - build
 export const getStaticProps = async () => {
@@ -13,6 +14,13 @@ export const getStaticProps = async () => {
 }
 
 const Courses = (props) => {
+    const router = useRouter();
+    useEffect(() => {
+        let loginStatus = localStorage.getItem('loginStatus');
+        if(!loginStatus) {
+            router.push('/login');
+        }
+    })
     console.log('props', props);
     const {productData} = props;
     return(

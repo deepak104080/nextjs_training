@@ -2,19 +2,32 @@ import React, { useState } from 'react';
 import {useRouter} from 'next/router';
 import axios from 'axios';
 
-const login = () => {
+export const getStaticProps = () => {
+    let url = process.env.BASE_URL;
+    return {
+        props: {
+            baseurl: url
+        }
+    }
+}
+
+const Login = (props) => {
     const [formdata, setFormdata] = useState({});
     const [submitStatus, setSubmitStatus] = useState(false);
     const router = useRouter();
-    // const baseurl = process.env.BASE_URL;
+    const {baseurl} = props;
+    console.log('baseurl', baseurl);
 
     const loginFn = async () => {
         console.log('formdata', formdata, process.env.BASE_URL);
-        const url =  'http://localhost:3000/' + 'api/users/login';
+        const url =  baseurl + 'api/users/login';
         try{
             const response = await axios.post(url, formdata);
             console.log(response.data);
             if(response.data.userid) {
+                localStorage.setItem('loginStatus', true);
+                localStorage.setItem('username', response.data.email);
+                localStorage.setItem('name', response.data.name)
                 router.push('/products');
             }
         }
@@ -48,4 +61,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login

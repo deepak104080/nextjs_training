@@ -6,6 +6,8 @@ const handler = async(req, res) => {
         try{   
             console.log('inside all users.')
             let data = await Users.find({}); 
+            //sql syntax for db
+            //mysql.promise().query('SELECT * FROM ......')
             res.status(200).json(data);
         }
         catch(err){
